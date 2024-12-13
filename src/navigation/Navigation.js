@@ -6,6 +6,7 @@ import HomeScreen from '../screens/HomeScreen'
 import LoginScreen from '../screens/auth/LoginScreen'
 import { navigationRef } from '../utils/navigationUtils'
 import { useCustomTheme } from './Theme'
+import EmailScreen from '../screens/auth/EmailScreen'
 
 const Stack =createNativeStackNavigator()
 const Navigation = () => {
@@ -29,6 +30,8 @@ const MyTheme={
   <Stack.Navigator initialRouteName='login'>
   <Stack.Screen name='home' component={HomeScreen} options={{headerShown:false}}/>
   <Stack.Screen name='login' component={LoginScreen} options={{headerShown:false}}/>
+  <Stack.Screen name='EmailScreen' component={EmailScreen} options={{headerShown:false}}/>
+
 
 
 
